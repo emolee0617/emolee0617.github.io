@@ -1,202 +1,159 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>CAST</title>
-    <meta
-      charset="utf-8"
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-    />
-    <link rel="icon" type="image/png" href="img/earth_book.png" />
-    <link
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      media="screen"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="css/frame.css"
-      media="screen"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="css/controls.css"
-      media="screen"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="css/custom.css"
-      media="screen"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700"
-      rel="stylesheet"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/menu.js"></script>
-    <script src="js/footer.js"></script>
-    <style>
-      .menu-documentation {
-        color: rgb(255, 255, 255) !important;
-        opacity: 1 !important;
-        font-weight: 700 !important;
-      }
-    </style>
-  </head>
 
-  <body>
-    <div class="menu-container"></div>
-    <div class="content-container">
-      <div class="content">
-        <div class="content-table flex-column">
-          <!-------------------------------------------------------------------------------------------->
-          <!-- Documentation-->
-          <div class="flex-row">
-            <div class="flex-item flex-column">
-              <h2 id="documentation-intro">The "How To Use" Documentation</h2>
-              <hr />
-              <!-- <p class="text">
+<head>
+  <title>CAST</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="img/earth_book.png" />
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet"
+    type="text/css" />
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/footer.js"></script>
+  <style>
+    .menu-documentation {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu-container"></div>
+  <div class="content-container">
+    <div class="content">
+      <div class="content-table flex-column">
+        <!-------------------------------------------------------------------------------------------->
+        <!-- Documentation-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 id="documentation-intro">The "How To Use" Documentation</h2>
+            <hr />
+            <!-- <p class="text">
                 This is an user tutorial explaining the functionalities of this
                 project.
               </p> -->
-            </div>
           </div>
-          <!-------------------------------------------------------------------------------------------->
-          <!-- Table of Content-->
-          <div class="flex-row">
-            <div class="flex-item flex-column">
-              <h3>Table of Contents</h3>
-              <ul>
-                <li>
-                  <a href="#media-file">Media/Image File</a>
-                </li>
-                <li><a href="#save-load">Save and Load Media Sessions</a></li>
-                <li><a href="#label">Labels/Annotations</a></li>
-                <li><a href="#timeline">Play with Timeline</a></li>
-              </ul>
-            </div>
+        </div>
+        <!-------------------------------------------------------------------------------------------->
+        <!-- Table of Content-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h3>Table of Contents</h3>
+            <ul>
+              <li>
+                <a href="#media-file">Media/Image File</a>
+              </li>
+              <li><a href="#save-load">Save and Load Media Sessions</a></li>
+              <li><a href="#label">Labels/Annotations</a></li>
+              <li><a href="#timeline">Play with Timeline</a></li>
+            </ul>
           </div>
-          <!-------------------------------------------------------------------------------------------->
-          <!-- Start Media File-->
-          <div class="flex-row">
-            <div class="flex-item flex-column">
-              <h2 id="media-file">Media/Image File</h2>
-              <hr />
-              <p class="text">
-                You are able to upload one or multiple media or image file(s) as
-                the background. To upload a file, click the "choose file"
-                button in the header menu. Feel free to choose one or more
-                files. Note that though you could upload the desired files in
-                many formats, for your using experiences, uploading from `.jpg`,
-                `.png`, `.jpeg` and `.mp4` formats are strongly suggested.
-              </p>
-              <p class="text">
-                To delete one file, select the file on the bottom layer of
-                timeline, and click the "Delete Media File" button in the header
-                menu.
-              </p>
-              <p class="text">
-                We also support changing the duration length for one file. To
-                change the duration, click the file you want to make changes on
-                the bottom layer of the timeline. A "Bottom Layer Editor" will pop
-                up. Input the new length for the file and click "Adjust Duration" 
-                Button. Units are in seconds.
-              </p>
-              <p class="text">
-                Note that the default display duration for an image file is 10
-                seconds.
-              </p>
-              <a
-                class="image adaptive-image"
-                style="
+        </div>
+        <!-------------------------------------------------------------------------------------------->
+        <!-- Start Media File-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 id="media-file">Media/Image File</h2>
+            <hr />
+            <p class="text">
+              You are able to upload one or multiple media or image file(s) as
+              the background. To upload a file, click the "choose file"
+              button in the header menu. Feel free to choose one or more
+              files. Note that though you could upload the desired files in
+              many formats, for your using experiences, uploading from `.jpg`,
+              `.png`, `.jpeg` and `.mp4` formats are strongly suggested.
+            </p>
+            <p class="text">
+              To delete one file, select the file on the bottom layer of
+              timeline, and click the "Delete Media File" button in the header
+              menu.
+            </p>
+            <p class="text">
+              We also support changing the duration length for one file. To
+              change the duration, click the file you want to make changes on
+              the bottom layer of the timeline. A "Bottom Layer Editor" will pop
+              up. Input the new length for the file and click "Adjust Duration"
+              Button. Units are in seconds.
+            </p>
+            <p class="text">
+              Note that the default display duration for an image file is 10
+              seconds.
+            </p>
+            <a class="image adaptive-image" style="
                   background-image: url('img/documentation-1.jpg');
                   min-height: 520px;
-                "
-                href="img/documentation-1.jpg"
-                target="_blank"
-              ></a>
-            </div>
+                " href="img/documentation-1.jpg" target="_blank"></a>
           </div>
-          <!-------------------------------------------------------------------------------------------->
-          <!-- Start Save and Load Sessions-->
-          <div class="flex-row">
-            <div class="flex-item flex-column">
-              <h2 id="save-load">Save/Load Sessions</h2>
-              <hr />
-              <p class="text">
-                You are able to save and load presets of labels. To save a
-                combination preset, click the "Session" button and choose the
-                option "Save Session". The preset will be downloaded locally as
-                an `.json` file.
-              </p>
-              <p class="text">
-                To successfully upload a preset, click the "Session" button and choose the option 
-                "Upload Session". Choose the preset (in format of `.json` file) you want to upload 
-                and click open. Then, click the "Session" button again and choose the option "Upload 
-                Session Assets". Choose the directory containing the media files corresponding to the 
-                uploaded session and click open. It is important to upload the`.json` file first so 
-                that the assets get loaded in the correct order for the timeline.
-              </p>
-            </div>
+        </div>
+        <!-------------------------------------------------------------------------------------------->
+        <!-- Start Save and Load Sessions-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 id="save-load">Save/Load Sessions</h2>
+            <hr />
+            <p class="text">
+              You are able to save and load presets of labels. To save a
+              combination preset, click the "Session" button and choose the
+              option "Save Session". The preset will be downloaded locally as
+              an `.json` file.
+            </p>
+            <p class="text">
+              To successfully upload a preset, click the "Session" button and choose the option
+              "Upload Session". Choose the preset (in format of `.json` file) you want to upload
+              and click open. Then, click the "Session" button again and choose the option "Upload
+              Session Assets". Choose the directory containing the media files corresponding to the
+              uploaded session and click open. It is important to upload the`.json` file first so
+              that the assets get loaded in the correct order for the timeline.
+            </p>
           </div>
-          <!-------------------------------------------------------------------------------------------->
-          <!-- Start Labels-->
-          <div class="flex-row">
-            <div class="flex-item flex-column">
-              <h2 id="label">Labels/Annotations</h2>
-              <hr />
-              <p class="text">
-                You are able to toggle On and Off of the Overlay layer, as well
-                as create, delete edit labels on the Overlay layer.
-              </p>
-              <p class="text">
-                To toggle the Overlay layer on the canvas board, click the
-                "Toggle Overlay" button. You can also drag the overlay to the
-                desired position on the canvas board by drag the red square on
-                the top left corner of the overlay. To turn off the overlay,
-                click the "Toggle Overlay" button again.
-              </p>
-              <p class="text">
-                To create a new label, make sure the Overlay is on, and then
-                click the Add label button in the top navbar. Then click the
-                position where you want to put the label on the Overlay. A new
-                label will be created.
-              </p>
-              <p class="text">
-                When you click the label from the Overlay or from the Timeline,
-                the Label Editor will show up. You are able to edit the label's
-                text, font, and background color, upload a small image or gif file
-                to the label, change position on Overlay, resize, and change the
-                start and end time of that label. Besides, you can also drag the
-                label box on the timeline to change its start and end time.
-              </p>
-              <p class="text">
-                To delete one label, after selecting that label, click the
-                "Delete Label" button in the Label Editor.
-              </p>
-            </div>
+        </div>
+        <!-------------------------------------------------------------------------------------------->
+        <!-- Start Labels-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 id="label">Labels/Annotations</h2>
+            <hr />
+            <img class="image image-wrap-text max-width-500" src="img/label-editor.png">
+            <p class="text">
+              You are able to toggle On and Off of the Overlay layer, as well
+              as create, delete edit labels on the Overlay layer. 
+              To toggle the Overlay layer on the canvas board, click the
+              "Toggle Overlay" button. You can also drag the overlay to the
+              desired position on the canvas board by drag the red square on
+              the top left corner of the overlay. To turn off the overlay,
+              click the "Toggle Overlay" button again. 
+              To create a new label, make sure the Overlay is on, and then
+              click the Add label button in the top navbar. Then click the
+              position where you want to put the label on the Overlay. A new
+              label will be created. 
+              When you click the label from the Overlay or from the Timeline,
+              the Label Editor will show up. You are able to edit the label's
+              text, font, and background color, upload a small image or gif file
+              to the label, change position on Overlay, resize, and change the
+              start and end time of that label. Besides, you can also drag the
+              label box on the timeline to change its start and end time. 
+              To delete one label, after selecting that label, click the
+              "Delete Label" button in the Label Editor.
+            </p>
           </div>
-          <!-------------------------------------------------------------------------------------------->
-          <!-- Start Timeline-->
-          <div class="flex-row">
-            <div class="flex-item flex-column">
-              <h2 id="timeline">Play with Timeline</h2>
-              <hr />
+        </div>
+        <!-------------------------------------------------------------------------------------------->
+        <!-- Start Timeline-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 id="timeline">Play with Timeline</h2>
+            <hr />
+            <div class="flex-item flex-item-stretch flex-column">
               <p class="text">
+                <img class="image image-wrap-text max-width-400-right" src="img/timeline-section.png">
                 You are able to play and pause the media you uploaded, by
                 clicking the "Play" and "Pause" button on the timeline. You can
                 also drag the timeline slider (the grass-green color triangle)
@@ -210,6 +167,8 @@
         </div>
       </div>
     </div>
-    <div class="footer-container"></div>
-  </body>
+  </div>
+  <div class="footer-container"></div>
+</body>
+
 </html>
