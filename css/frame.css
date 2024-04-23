@@ -516,9 +516,8 @@ hr {
   max-width: 1000px;
 }
 
-.max-width-250-right {
-  max-width: 250px;
-  float: right;
+.max-width-300 {
+  max-width: 300px;
 }
 
 .max-width-140 {
